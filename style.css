@@ -28,6 +28,17 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
+ul {
+	list-style: none;
+}
+
+button,
+button:focus {
+	border: none;
+	cursor: pointer;
+	outline: none;
+}
+
 /* Header */
 header {
 	display: flex;
@@ -47,4 +58,56 @@ header .logo i {
 
 header .icons .fa-search {
 	margin-right: var(--padding);
+}
+
+/* Video Player */
+.player {
+	background-color: var(--black-color);
+	text-align: center;
+	position: sticky;
+	top: 0;
+}
+
+.player video {
+	width: 100%;
+	height: 100%;
+	max-width: 900px;
+}
+
+/* Video Information */
+.info {
+	padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+	display: flex;
+	font-size: var(--font-medium);
+	color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+	margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton {
+	display: flex;
+	padding-bottom: var(--padding);
+}
+
+.info .metadata .titleAndButton .title {
+	font-size: var(--font-large);
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .moreBtn {
+	height: 100%;
+}
+
+.info .views {
+	font-size: var(--font-medium);
+	color: var(--grey-dark-color);
 }
