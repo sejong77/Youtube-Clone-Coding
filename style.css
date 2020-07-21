@@ -10,6 +10,7 @@
 	/* Size */
 	--padding: 12px;
 	--avatar-size: 36px;
+	--icon-size: 20px;
 
 	/* Font Size */
 	--font-large: 18px;
@@ -110,4 +111,28 @@ header .icons .fa-search {
 .info .views {
 	font-size: var(--font-medium);
 	color: var(--grey-dark-color);
+}
+
+/* Actions */
+.action {
+	display: flex;
+	justify-content: space-around;
+	margin: var(--padding) 0;
+}
+
+.action button {
+	display: flex;
+	flex-direction: column;
+	font-size: var(--font-medium);
+	color: var(--grey-dark-color);
+}
+
+.action button:hover i {
+	color: var(--blue-color);
+}
+
+.action button i {
+	margin: 0 auto;
+	margin-bottom: calc(var(--padding) / 2);
+	font-size: var(--icon-size);
 }
