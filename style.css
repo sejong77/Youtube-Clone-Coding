@@ -77,7 +77,7 @@ header .icons .fa-search {
 	width: 100%;
 	height: 100%;
 	max-width: 900px;
-	max-height: 45 0px;
+	max-height: 380px;
 }
 
 /* Video Information */
@@ -103,15 +103,23 @@ header .icons .fa-search {
 
 .info .metadata .titleAndButton .title {
 	font-size: var(--font-large);
+	margin-right: var(--padding);
+}
+
+.info .metadata .titleAndButton .title.clamp {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 2;
 	overflow: hidden;
-	margin-right: var(--padding);
 }
 
 .info .metadata .titleAndButton .moreBtn {
 	height: 100%;
+	transition: transform 380ms ease-in-out;
+}
+
+.info .metadata .titleAndButton .moreBtn.clicked {
+	transform: rotate(180deg);
 }
 
 .info .views {
@@ -213,7 +221,7 @@ header .icons .fa-search {
 
 .upNext .item .img img {
 	width: 100%;
-	height: 85%;
+	height: 120px;
 }
 
 .upNext .item .info {
@@ -248,4 +256,11 @@ header .icons .fa-search {
 .InformationAndUpNext {
 	display: flex;
 	flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+	.InformationAndUpNext {
+		flex-direction: row;
+		margin: var(--padding) 0;
+	}
 }
