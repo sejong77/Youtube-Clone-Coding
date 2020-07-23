@@ -3,6 +3,7 @@
 	--white-color: #fff;
 	--black-color: #140a00;
 	--blue-color: #045fd4;
+	--blue-light-color: #03b6fc;
 	--red-color: #ff0000;
 	--grey-dark-color: #909090;
 	--grey-light-color: #e0e0e0;
@@ -196,6 +197,77 @@ header .icons .fa-search {
 
 .channel .subscribe:hover {
 	background-color: var(--grey-dark-color);
+}
+
+/* Comments */
+.comments {
+	margin: var(--padding) 0;
+}
+
+.commentsAndSort {
+	display: flex;
+	padding: var(--padding) 0;
+	font-size: var(--font-large);
+}
+
+.commentsAndSort li {
+	padding-right: calc(var(--padding) * 2);
+}
+
+.commentsAndSort li.sort {
+	color: var(--grey-dark-color);
+}
+
+.input {
+	margin: calc(var(--padding) * 2) 0;
+}
+
+.input .name {
+	margin-right: calc(var(--padding) * 3);
+	border-radius: 50%;
+	background-color: var(--blue-light-color);
+	color: var(--white-color);
+	padding: var(--padding) calc(var(--padding) / 2);
+}
+
+.input .commentsInput input {
+	border: none;
+	outline: none;
+	height: 20px;
+	border-bottom: 1px solid var(--grey-dark-color);
+	width: 300px;
+}
+
+.buttons {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: var(--padding);
+}
+
+.resetBtn {
+	margin-right: var(--padding);
+	background-color: var(--white-color);
+	border: none;
+	outline: none;
+	padding: var(--padding) calc(var(--padding) * 2);
+	border-radius: 5px;
+}
+
+.resetBtn:hover {
+	background-color: var(--grey-light-color);
+}
+
+.inputBtn {
+	background-color: var(--grey-light-color);
+	color: var(--white-color);
+	border: none;
+	outline: none;
+	padding: var(--padding) calc(var(--padding) * 2);
+	border-radius: 5px;
+}
+
+.inputBtn:hover {
+	background-color: var(--blue-color);
 }
 
 /* upNext */
