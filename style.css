@@ -258,6 +258,24 @@ header .icons .fa-search {
 	flex-direction: column;
 }
 
+/* My Information */
+.myInformation {
+	display: flex;
+	justify-content: space-around;
+	padding: var(--padding);
+	background-color: var(--black-color);
+	color: var(--white-color);
+}
+
+.Hong {
+	margin: var(--padding);
+}
+
+.myInformation li {
+	padding: calc(var(--padding) / 2);
+}
+
+/* Media Query */
 @media screen and (min-width: 768px) {
 	.InformationAndUpNext {
 		flex-direction: row;
