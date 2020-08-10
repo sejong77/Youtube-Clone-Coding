@@ -235,7 +235,7 @@ header .icons .fa-search {
 	outline: none;
 	height: 20px;
 	border-bottom: 1px solid var(--grey-dark-color);
-	width: 300px;
+	width: 250px;
 }
 
 .buttons {
@@ -343,6 +343,10 @@ header .icons .fa-search {
 	margin: var(--padding);
 }
 
+.Hong li {
+	font-size: var(--font-small);
+}
+
 .myInformation li {
 	padding: calc(var(--padding) / 2);
 }
@@ -352,5 +356,9 @@ header .icons .fa-search {
 	.InformationAndUpNext {
 		flex-direction: row;
 		margin: var(--padding) 0;
+	}
+
+	.input .commentsInput input {
+		width: 70%;
 	}
 }
